@@ -20,7 +20,7 @@ public class ServiceCompanyApplication {
 @Bean
 	CommandLineRunner start(CompanyRepository companyRepository,Environment env){
 		return args -> {
-			System.out.println(env.getProperty("server.port"));
+			System.out.println(env.getProperty("me"));
 			Stream.of("A","B","C").forEach(c->{
 				companyRepository.save(new Company(null,c,100+Math.random()*900));
 			});
