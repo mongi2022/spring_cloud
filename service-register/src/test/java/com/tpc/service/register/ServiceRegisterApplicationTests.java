@@ -1,4 +1,4 @@
-package com.tpc.serviceregister;
+package com.tpc.service.register;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
